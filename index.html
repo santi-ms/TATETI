@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TATETI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="juego">
+    <h1>TATETI</h1>
+
+    <div class="modo">
+      <label for="modo">Modo:</label>
+      <select id="modo">
+        <option value="2j">2 jugadores</option>
+        <option value="cpu">Contra la computadora</option>
+      </select>
+    </div>
+
+    <div class="marcador">
+      <div class="puntos x"><span>X</span><strong id="puntosX">0</strong></div>
+      <div class="puntos e"><span>Empates</span><strong id="puntosE">0</strong></div>
+      <div class="puntos o"><span>O</span><strong id="puntosO">0</strong></div>
+    </div>
+
+    <p id="estado" class="estado" aria-live="polite">Turno de X</p>
+
+    <div id="tablero" class="tablero" role="grid" aria-label="Tablero de tateti"></div>
+
+    <div class="botones">
+      <button id="btnReiniciar" type="button">Nueva partida</button>
+      <button id="btnResetPuntos" type="button" class="secundario">Reiniciar marcador</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
